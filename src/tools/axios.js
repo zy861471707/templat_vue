@@ -18,7 +18,6 @@ axios.interceptors.request.use(
 axios.interceptors.response.use(
     response => {
         const res = response;
-        console.log(res)
         if (res.status !== 200) {
             Message({
                 message: res.message,
@@ -28,7 +27,7 @@ axios.interceptors.response.use(
             
             return Promise.reject('err');
         } else {
-            return response.data;
+            return Promise.resolve(response.data);
         }
     },
     err => {

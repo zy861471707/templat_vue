@@ -51,7 +51,7 @@ export default {
                     username:this.form.name,
                     userpwd:this.form.password
                   }).then(d => {
-                    if(d && d.data.result){
+                    if(d && d.result){
                       console.log(d.data);
                       // this.userInfo = d.data.data;
                       // cookie.set('userid',d.data.data.id);
