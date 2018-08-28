@@ -10,8 +10,8 @@ const constantRouterMap = [
   },
   {
     path: '/',
-    name: 'HelloWorld',
-    component: (resolve) => require(['@/components/HelloWorld'], resolve),
+    name: 'home',
+    component: (resolve) => require(['@/components/layout'], resolve),
   }
 ];
 const RouterConfig = {
