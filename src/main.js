@@ -7,7 +7,7 @@ import element from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import storage from './tools/storage';
 import AxiosPlugin from '../src/tools/axios';
-
+import './assets/icons/iconfont.css';
 Vue.prototype.Storage = storage;
 Vue.use(AxiosPlugin);
 Vue.use(element);
